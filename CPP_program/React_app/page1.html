@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container { 
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+          }
+          .container div{
+            height: 100vh;
+            width: 100vw;
+        }
+        .section{
+              background-color: aqua;
+position: relative;
+}
+.section img{
+            
+            max-width: 5rem;
+            max-height: 5rem;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hdr">goru</div>
+        <div class="section">Hey
+            <img class="img"src="./64366.jpg" alt="">
+        </div>
+        <div class="ftr">Gsap</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js" integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha512-UznfQR3LKkKPL0k7HISMqOsmUCjVhjWK8HlR0Pxo5JpjN8eZ8XRwKBRX6OTOQIO0FYOl8Oue+4dG4uHtx1SgKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha512-5nTpER5HrSoRPyd8szIn2QglL3A54KJs4XOcX3SdHTbLb8TO/5wLqoFYSFGNyhzZy7CFAOZf66X3ikr2v7Bfuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js" integrity="sha512-H0dUDNDv/uVTWqjYbXjaHb5mILJYXUJ9g36b/Ye/Jt/wk1tVPi8M99AEPbPEBkwL/jysKfLg6sN+kvElcJuESw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+   const img= document.querySelector(".img");
+   img.addEventListener("click",(()=>{
+    console.log("hey goru");
+   }))
+   const section= document.getElementsByClassName("section");
+    const flightPath={
+        curviness:1.25,
+        autorotate:true,
+        values:[
+        {
+            x:100,y:-20
+        },
+        {
+            x:300,y:10
+        },
+        {
+            x:500,y:50
+        },
+        ]
+    }
+
+    const tween = new TimeLineLite();
+    tween.add(
+        TweenLite.to("section",1,{
+            bezier:flightPath,
+            ease:Power1.easeInOut
+        })
+    )
+    const controller=new ScrollMagic.controller();
+    const scene=new ScrollMagic.scene({
+        triggerElement:"img",
+        duration:1000,
+        triggerHook:0.5
+    })
+    .setTween(tween)
+    .addIndicators()
+    .addTo(controller)
+    .setPin("img")
+  </script>
+</body>
+</html>

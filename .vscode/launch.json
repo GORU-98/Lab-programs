@@ -1,0 +1,150 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Prime",
+      "request": "launch",
+      "mainClass": "Prime",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "OddEven",
+      "request": "launch",
+      "mainClass": "OddEven",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "CalClient",
+      "request": "launch",
+      "mainClass": "CalClient",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "CalServer",
+      "request": "launch",
+      "mainClass": "CalServer",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "fibnc",
+      "request": "launch",
+      "mainClass": "fibnc",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "fibns",
+      "request": "launch",
+      "mainClass": "fibns",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "ServerSocketBind",
+      "request": "launch",
+      "mainClass": "ServerSocketBind",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "UDPserverEO",
+      "request": "launch",
+      "mainClass": "UDPserverEO",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "UDPclientEO",
+      "request": "launch",
+      "mainClass": "UDPclientEO",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "udpServerEO",
+      "request": "launch",
+      "mainClass": "udpServerEO",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "armc",
+      "request": "launch",
+      "mainClass": "armc",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "arms",
+      "request": "launch",
+      "mainClass": "arms",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "largc",
+      "request": "launch",
+      "mainClass": "largc",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "largs",
+      "request": "launch",
+      "mainClass": "largs",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "palc",
+      "request": "launch",
+      "mainClass": "palc",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "pals",
+      "request": "launch",
+      "mainClass": "pals",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "Primes",
+      "request": "launch",
+      "mainClass": "Primes",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "Primec",
+      "request": "launch",
+      "mainClass": "Primec",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/a/Saved Games/graphics program",
+      "program": "c:/Users/a/Saved Games/graphics program/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
