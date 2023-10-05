@@ -41,7 +41,7 @@ public class cals {
                     break;
             }
             ss.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e);
         }
     }

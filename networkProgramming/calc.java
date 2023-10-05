@@ -35,7 +35,7 @@ public class calc {
             dout.flush();
             dout.close();
             s.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
 
             System.out.println(e);
         }

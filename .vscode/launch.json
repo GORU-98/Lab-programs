@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Exception",
+      "request": "launch",
+      "mainClass": "Exception",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "calc",
+      "request": "launch",
+      "mainClass": "calc",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
+      "name": "Calculator",
+      "request": "launch",
+      "mainClass": "Calculator",
+      "projectName": "graphics program_dc129e68"
+    },
+    {
+      "type": "java",
       "name": "Prime",
       "request": "launch",
       "mainClass": "Prime",
@@ -134,8 +155,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/a/Saved Games/graphics program",
-      "program": "c:/Users/a/Saved Games/graphics program/build/Debug/outDebug",
+      "cwd": "d:/graphics program",
+      "program": "d:/graphics program/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

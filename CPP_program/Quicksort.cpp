@@ -2,10 +2,6 @@
 #include<conio.h>
 using namespace std;
 
-
-
-
-
 int partition(int arr[],int start,int end){
    int pivot=arr[start];
 int count = 0;
